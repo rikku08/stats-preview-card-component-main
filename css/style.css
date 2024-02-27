@@ -47,7 +47,6 @@ body {
     background-color: var(--dark-blue-card-background);
     border-radius: 10px;
 
-    /* border: 1px solid yellowgreen; */
 }
 
 .left-side,
@@ -104,19 +103,17 @@ span.accent {
 
 
 .right-side img {
-
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 0 10px 10px 0;
+} 
+
+.right-side {
+    position: relative;
 }
 
-/* .overlay {
-    width: 100%;
-    height: 100%;
-    background-color: var(--soft-violet-accent-img);
-    position: relative;
-} */
+
 
 
 
@@ -129,12 +126,13 @@ span.accent {
 
     .left-side,
     .right-side {
-        width: 100%;    }
+        width: 100%;    
+    }
 
     .right-side {
         order: 1;
     }
-    
+
     .left-side {
         order: 2;
         text-align: center;
@@ -157,6 +155,7 @@ span.accent {
     }
 
 
+
     .right-side img {
         border-radius: 10px 10px 0 0;
     }
@@ -166,4 +165,3 @@ span.accent {
 /* mobile view - done */
 /* change accent color of image */
 /* img color accent not workin, I tried background for right-side but it is not working on mobile view */
-/* this is good for now, will try to find  another solution */
