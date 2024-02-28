@@ -50,8 +50,12 @@
     
     <section class="right-side">
       <!-- image goes here -->
-          <img src="stats-preview-card-component-main/images/image-header-desktop.jpg" alt="image-header-mobile" width="540"  height="446">
-        
+      <picture>
+        <source media="(max-width: 1440px)" srcset="stats-preview-card-component-main/images/image-header-desktop.jpg">
+        <source media="(max-width: 375px)" srcset="stats-preview-card-component-main/images/image-header-mobile.jpg">
+        <img src="stats-preview-card-component-main/images/image-header-desktop.jpg" alt="image-header-desktop" width="540"  height="446">
+      </picture>
+          
     </section>
   </div>
   

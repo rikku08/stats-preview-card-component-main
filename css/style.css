@@ -8,7 +8,7 @@
 --dark-blue-card-background: hsl(244, 38%, 16%);
 --soft-violet-accent: hsl(277, 64%, 61%);
 
---soft-violet-accent-img: rgba(125, 63, 163, 0.7);
+--soft-violet-accent-img: rgba(125, 63, 163, 0.5);
 
 /* neutral color */
 /* main, heading, stats */
@@ -101,17 +101,18 @@ span.accent {
     font-family: var(--lexend-deca-font);
 }
 
+.right-side {
+    background-color: var(--soft-violet-accent-img);
+    border-radius: 0 10px 10px 0;
+}
 
 .right-side img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 0 10px 10px 0;
+    mix-blend-mode: overlay;
 } 
-
-.right-side {
-    position: relative;
-}
 
 
 
@@ -153,9 +154,11 @@ span.accent {
         margin-right: 0;
         margin-bottom: 20px;
     }
+    .right-side  {
+        height: 240px;
+    }
 
-
-
+    .right-side,
     .right-side img {
         border-radius: 10px 10px 0 0;
     }
